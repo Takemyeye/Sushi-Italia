@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  color: #fefefe;
+  text-decoration: none;
+  width: auto;
+  height: auto;
+}
+h2,h1{
+  color:#ff6b6b;
+  text-align: center;
+  text-shadow: 0 0 10px #ff6b6b;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.main1{
+  width: 100%;
+  height: 100vh;
+  background: url(img/back.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+  background-attachment: fixed;
+  z-index: 0;
+}
+header{
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #14172c;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.titel {
+  font-size: 40px;
+  padding: 5px;
+  border-radius: 15%;
+  border: 2px #ff6b6d solid;
+  background-color: #ff6b6b;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-shadow: 0 0 10px #ff6b6b;
+}
+.about{
+  font-size: 15px;
+  color: #fefefe;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  cursor: pointer;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.main2{
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background-color: #14172c;
+}
+.foter-back{
+  position: absolute;
+  width: 100%;
+  height: 33%;
+  bottom: 0;
+  left: 0;
+  background-color: #0d0e18;
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly ;
+  gap: 20px;
+}
+.conteiner{
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+  gap: 20px;
+  font-size: 13px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #fefefe;
+}
+.icon-sushi{
+  width: 160px;
+  height: 160px;
+  background: url(img/si.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.about-us{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+  height: 270px;
+  text-wrap: balance;
+}
+.specialtise{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3px;
+  text-wrap: balance;
+}
+.privacy{
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 25%;
+  background-color: #090b13;
+  color: #fefefe;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.policy{
+  position: absolute;
+  left: 20%;
+  top: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  font-size: 15px;
+  text-wrap: balance;
+  color:wheat;
+  text-align: center;
+}
+.socium{
+  position: absolute;
+  right: 20%;
+  font-size: 30px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+}
