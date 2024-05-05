@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+::selection {
+  background: rgba(0, 0, 0, 0.5);
+}
 a{
   color: #fefefe;
   text-decoration: none;
@@ -15,6 +18,7 @@ h2,h1{
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .main1{
+  position: relative;
   width: 100%;
   height: 100vh;
   background: url(img/back.jpg);
@@ -23,6 +27,23 @@ h2,h1{
   background-color: black;
   background-attachment: fixed;
   z-index: 0;
+}
+.scroll{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 15%;
+  border: 2px #ff6b6d solid;
+  background-color: #ff6b6b;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-shadow: 0 0 10px #ff6b6b;
+  color: #ff6b6b;
+  z-index: 2;
+  position: fixed;
+  cursor: pointer;
 }
 header{
   width: 100%;
@@ -57,15 +78,159 @@ header{
   cursor: pointer;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-
-.main2{
+.sushi3{
   position: absolute;
+  left: 1%;
+  width: 300px;
+  height: 300px;
+  background: url(img/sushi3.png);
+  background-size: cover;
+  background-position: center;
+  transform: rotate(160deg);
+  animation: start-rotate 1s forwards;
+}
+.sushi1{
+  position: absolute;
+  right: 3%;
+  width: 200px;
+  height: 200px;
+  background: url(img/sushi1.png);
+  background-size: cover;
+  background-position: center;
+  animation: start 1s forwards;
+}
+.order{
+  position: absolute;
+  left: 3%;
+  top: 20%;
+  width: 50%;
+  height: 75%;
+  backdrop-filter: blur(5px);
+  background-color: #090b13b0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 40px;
+}
+.sushi2{
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: url(img/sushi2.png);
+  background-size: cover;
+  background-position: center;
+  animation: start-left 1s forwards;
+
+}
+.text{
+  width: 50%;
+  color: #fefefe;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-wrap: balance;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.btn{
+  color: #ff6b6b;
+  position: relative;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 15%;
+  border: 2px #ff6b6d solid;
+  background-color: transparent;
+  box-shadow: 0 0 10px #ff6b6b;
+}
+.btn:hover {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  color: #14172c;
+  background-color: #ff6b6b;
+  -webkit-text-fill-color: none;
+  background-clip: none;
+  border: 2px #14172c solid;
+}
+.main2{
+  position: relative;
   top: 100%;
   width: 100%;
-  height: 100vh;
+  height: 105vh;
   z-index: 1;
   background-color: #14172c;
+}
+.menu{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 67%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.food{
+  font-size: 13px;
+  width: 250px;
+  height: 350px;
+  background-color: #090b13b0;
+  border-radius: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  box-shadow: 0 0 15px #ff6b6b;
+  color: #fefefe;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.price{
+  padding: 5px;
+  border-radius: 15%;
+  border: 2px #ff6b6d solid;
+  background-color: transparent;
+  color: #ff6b6b;
+  box-shadow: 0 0 10px #ff6b6b;
+}
+.price:hover{
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  color: #14172c;
+  background-color: #ff6b6b;
+  -webkit-text-fill-color: none;
+  background-clip: none;
+  border: 2px #14172c solid;
+}
+.sushi5{
+  width: 150px;
+  height: 150px;
+  background: url(img/sushi5.png);
+  background-size: cover;
+  background-position: center;
+}
+.sushi6{
+  width: 150px;
+  height: 150px;
+  background: url(img/sushi6.png);
+  background-size: cover;
+  background-position: center;
+}
+.sushi7{
+  width: 150px;
+  height: 150px;
+  background: url(img/sushi7.png);
+  background-size: cover;
+  background-position: center;
+}
+.sushi8{
+  width: 150px;
+  height: 150px;
+  background: url(img/sushi8.png);
+  background-size: cover;
+  background-position: center;
 }
 .foter-back{
   position: absolute;
@@ -113,7 +278,7 @@ header{
   text-wrap: balance;
 }
 .privacy{
-  position: absolute;
+  position: relative;
   top: 100%;
   width: 100%;
   height: 25%;
@@ -145,4 +310,50 @@ header{
   justify-content: center;
   flex-direction: row;
   gap: 30px;
+}
+
+@keyframes start {
+  0%{
+    opacity: 0;
+    transform: translateY(-1000px);
+  }
+  30%{
+    opacity: 0;
+    transform: translateY(-1000px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes start-rotate {
+  0%{
+    opacity: 0;
+    transform: translateY(-1000px);
+  }
+  30%{
+    opacity: 0;
+    transform: translateY(-1000px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+    transform: rotate(160deg);
+  }
+}
+@keyframes start-left {
+  0%{
+    opacity: 0;
+    transform: translateX(-1000px);
+  }
+  30%{
+    opacity: 0;
+    transform: translateX(-1000px);
+
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+
+  }
 }
